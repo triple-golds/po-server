@@ -1,0 +1,6 @@
+spring:
+
+  datasource:
+    url: jdbc:mysql://10.63.119.112:3306/paperless_office?serverTimezone=Asia/Shanghai
+    username: root
+    password: root

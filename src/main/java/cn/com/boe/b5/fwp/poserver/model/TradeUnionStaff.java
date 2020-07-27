@@ -23,30 +23,32 @@ public class TradeUnionStaff {
     private String name;
 
     //性别
-    @Column(columnDefinition = "tinyint unsigned")
-    private int sex;
+    @Column(columnDefinition = "tinyint unsigned", nullable = false)
+    private short sex;
 
     //民族
-    @Column(columnDefinition = "tinyint unsigned")
-    private int nation;
+    @Column(columnDefinition = "tinyint unsigned", nullable = false)
+    private short nation;
 
     //政治面貌
-    @Column(columnDefinition = "tinyint unsigned")
-    private int political;
+    @Column(columnDefinition = "tinyint unsigned", nullable = false)
+    private short political;
 
     //出生日期
+    @Column(nullable = false)
     @JsonFormat(timezone = "GMT+8")
     private Date birthDate;
 
     //婚否
-    @Column(columnDefinition = "tinyint unsigned")
-    private int isMarriage;
+    @Column(columnDefinition = "tinyint unsigned", nullable = false)
+    private short isMarriage;
 
     //育否
-    @Column(columnDefinition = "tinyint unsigned")
-    private int isGiveBirth;
+    @Column(columnDefinition = "tinyint unsigned", nullable = false)
+    private short isGiveBirth;
 
     //入司日期
+    @Column(nullable = false)
     @JsonFormat(timezone = "GMT+8")
     private Date entryDate;
 
@@ -98,27 +100,27 @@ public class TradeUnionStaff {
         this.name = name;
     }
 
-    public int getSex() {
+    public short getSex() {
         return sex;
     }
 
-    public void setSex(int sex) {
+    public void setSex(short sex) {
         this.sex = sex;
     }
 
-    public int getNation() {
+    public short getNation() {
         return nation;
     }
 
-    public void setNation(int nation) {
+    public void setNation(short nation) {
         this.nation = nation;
     }
 
-    public int getPolitical() {
+    public short getPolitical() {
         return political;
     }
 
-    public void setPolitical(int political) {
+    public void setPolitical(short political) {
         this.political = political;
     }
 
@@ -130,19 +132,19 @@ public class TradeUnionStaff {
         this.birthDate = birthDate;
     }
 
-    public int getIsMarriage() {
+    public short getIsMarriage() {
         return isMarriage;
     }
 
-    public void setIsMarriage(int isMarriage) {
+    public void setIsMarriage(short isMarriage) {
         this.isMarriage = isMarriage;
     }
 
-    public int getIsGiveBirth() {
+    public short getIsGiveBirth() {
         return isGiveBirth;
     }
 
-    public void setIsGiveBirth(int isGiveBirth) {
+    public void setIsGiveBirth(short isGiveBirth) {
         this.isGiveBirth = isGiveBirth;
     }
 
